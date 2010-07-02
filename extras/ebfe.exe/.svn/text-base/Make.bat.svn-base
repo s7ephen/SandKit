@@ -1,0 +1,2 @@
+cl ebfe_non_ntvdm.cpp /IC:\WINDDK\2600.1106\inc\w2k /c
+link /out:ebfe_non_ntvdm.exe ebfe_non_ntvdm.obj

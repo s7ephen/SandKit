@@ -1,0 +1,4 @@
+LIBRARY "globalatom_test.dll"
+
+EXPORTS
+	enumerate_atoms

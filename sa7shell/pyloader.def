@@ -1,0 +1,5 @@
+LIBRARY "pyloader.dll"
+
+EXPORTS
+	function1
+	function2

@@ -1,0 +1,4 @@
+LIBRARY "test.dll"
+
+EXPORTS
+    console_attach

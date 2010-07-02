@@ -1,0 +1,4 @@
+LIBRARY "token_sniper.dll"
+
+EXPORTS
+	launch
