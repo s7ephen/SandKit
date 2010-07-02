@@ -8,25 +8,26 @@
 	<title>s7ephen/SandKit @ GitHub</title>
 	
 	<style type="text/css">
-		body {
-  		margin-top: 1.0em;
-  		background-color: #2a6211;
-		  font-family: "Helvetica,Arial,FreeSans";
-  		color: #ffffff;
+    body {
+      margin-top: 1.0em;
+      background-color: #202020;
+      font-family: "helvetica"; 
+      color: #cfcfcf;
     }
     #container {
       margin: 0 auto;
       width: 700px;
     }
-		h1 { font-size: 3.8em; color: #d59dee; margin-bottom: 3px; }
-		h1 .small { font-size: 0.4em; }
-		h1 a { text-decoration: none }
-		h2 { font-size: 1.5em; color: #d59dee; }
-    h3 { text-align: center; color: #d59dee; }
-    a { color: #d59dee; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
+    h1 { font-size: 3.8em; color: #c93637; margin-bottom: 3px; }
+    h1 .small { font-size: 0.4em; }
+    h1 a { text-decoration: none }
+    h2 { font-size: 1.5em; color: #c93637; }
+    h3 { color: #c93637; }
+    a { color: #c93637; }
+    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px;
+font-style: italic;}
     .download { float: right; }
-		pre { background: #000; color: #fff; padding: 15px;}
+    pre { background: #444; color: #ddd; padding: 15px;}
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
     .footer { text-align:center; padding-top:30px; font-style: italic; }
 	</style>
@@ -47,18 +48,81 @@
 
     <h1><a href="http://github.com/s7ephen/SandKit">SandKit</a>
       <span class="small">by <a href="http://github.com/s7ephen">s7ephen</a></span></h1>
+  <a href="http://github.com/s7ephen/SandKit"><img src="img/sandbox.png" alt="SandKit" /></a>
 
     <div class="description">
-      A Toolkit to assist with the investigation of Sandboxing software
+      SandKit is a toolset that is intended to assist with the investigation of Sandbox technologies.
     </div>
 
-    <h2>Authors</h2>
-<p>Stephen A. Ridley (stephen@matasano.com)<br/><br/>      </p>
-<h2>Contact</h2>
-<p>Stephen A. Ridley (stephen@sa7ori.org)<br/>      </p>
+    <p>SandKit was released to accompany the talk "Escaping the Sandbox" given
+at EuSecWest Amsterdam, Syscan Singapore, Syscan Vietnam, and ReCon in the
+summer of 2010.</p>
+    <p>Here are screenshots of just a few tools from SandKit:<br/>
+    <div align="center">
+    <table border=0>
+      <tr>
+        <td align="center">Sa7Shell: (Full Python injected in Chrome)</td>
+        <td align="center">Sa7Shell: (Full Python injected in Notepad)</td>
+        <td align="center">Token/Handle Sniping</td>
+        <td align="center">Interrogating Tokens</td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <a href="img/screenshots/TEMP_sa7orishell_screenshot.png"><img src="img/screenshots/TEMP_sa7orishell_screenshot.png" width="200" height="120" alt="Sa7Shell"/></a></td>
+        <td valign="top">
+          <a href="img/screenshots/TEMP_sa7orishell_screenshot2.png"><img src="img/screenshots/TEMP_sa7orishell_screenshot2.png" width="200" height="120" alt="Sa7Shell"/></a></td>
+        <td valign="top">
+          <a href="img/screenshots/TEMP_token_and_handle_sniper.png"><img src="img/screenshots/TEMP_token_and_handle_sniper.png" width="200" height="120" alt="Token/Handle Snipe"/></a></td>
+        <td valign="top">
+          <a href="img/screenshots/TEMP_dumptoken.png"><img src="img/screenshots/TEMP_dumptoken.png" width="200" height="120" alt="Interrogating Tokens"/></a></td>
+      </tr>
+      <tr>
+        <td align="center">Copy memory between processes.</td>
+        <td align="center">"Hexdump" memory directly from process.</td>
+        <td align="center">Dump process memory to file.</td>
+        <td align="center">Compare memory in two processes.</td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <a href="img/screenshots/copymem_example.jpg"><img src="img/screenshots/copymem_example.jpg" width="200" height="120" alt="Copymem"/></a></td>
+        <td valign="top">
+          <a href="img/screenshots/readmem_example.jpg"><img src="img/screenshots/readmem_example.jpg" width="200" height="120" alt="Readmem"/></a></td>
+        <td valign="top">
+          <a href="img/screenshots/dumpmem_example.jpg"><img src="img/screenshots/dumpmem_example.jpg" width="200" height="120" alt="Dumpmem"/></a></td>
+        <td valign="top">
+          <a href="img/screenshots/memdiff_example.jpg"><img src="img/screenshots/memdiff_example.jpg" width="200" height="120" alt="Memdiff"/></a></td>
+      </tr>
+      <tr>
+        <td align="center">Write string/array into process memory.</td>
+        <td align="center">Inline Python shell (within Sandkit)</td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <a href="img/screenshots/writemem_example.jpg"><img src="img/screenshots/writemem_example.jpg" width="200" height="120" alt="Writemem"/></a></td>
+        <td valign="top">
+          <a href="img/screenshots/pythonshell_example.jpg"><img src="img/screenshots/pythonshell_example.jpg" width="200" height="120" alt="Python Shell within Sandkit"/></a></td>
+      </tr>
+    </table>
+    </div>
+    <p>Download the slides!<br/>
+    <div align="left">
+    <table border=0>
+      <tr>
+        <td align="left">"Escaping The Sandbox" (EuSecWest/SyScan/Recon 2010)</td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <a
+href="https://github.com/s7ephen/SandKit/raw/master/Escaping_The_Sandbox/Escaping_The_Sandbox_Stephen_A_Ridley_2010.pdf"><img src="img/pdf_icon.png" alt="as pdf..."/></a></td>
+      </tr>
+    </table>
+    </div>
 
+<h2>Author/Contact</h2>
+<p>Stephen A. Ridley (stephen@sa7ori.org)<br/>      </p>
+<p> Twitter: <a href="http://twitter.com/s7ephen">s7ephen</a></p>
 
-    <h2>Download</h2>
+    <h2>Download the entire repository</h2>
     <p>
       You can download this project in either
       <a href="http://github.com/s7ephen/SandKit/zipball/master">zip</a> or
