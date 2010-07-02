@@ -85,12 +85,6 @@ unsigned long __stdcall tokenbruter (void *){
 };
 
 static void starttokenbruter(void){
-/*
-    1. First things first, we start a new master thread that runs asynchronously, so Reader can get back
-        to his business.
-    3. Load up our token display helper libraries.
-    4. Begin bruteforcing tokens continuously.
-*/
     DWORD dwThreadId, dwThrdParam = 1; 
     HANDLE hThread=NULL; 
     MessageBoxA(NULL,"Beginning Token Bruter.....attempting to CreateThread()","", MB_OK);
@@ -126,11 +120,6 @@ __declspec(dllexport) void launch(){
 BOOLEAN WINAPI DllMain( IN HINSTANCE hDllHandle, 
          IN DWORD     nReason, 
          IN LPVOID    Reserved ){
-
-    //I need to add the if statement that checks whether this
-    // is the load or the unload of the module. But I am lazy
-    // This will happen later.
-    //printf("\nC Module: '%s' loaded.", module_name);
 
     return TRUE;
 };
